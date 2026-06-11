@@ -1,0 +1,42 @@
+{
+    "name": "unseen-codes/chat",
+    "description": "A plug-and-play Livewire chat system for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "chat", "livewire", "real-time", "messaging"],
+    "authors": [
+        {
+            "name": "Unseen Codes",
+            "email": "hello@unseen-codes.dev"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0",
+        "livewire/livewire": "^3.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "pestphp/pest": "^2.0",
+        "pestphp/pest-plugin-laravel": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "UnseenCodes\\Chat\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "UnseenCodes\\Chat\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "UnseenCodes\\Chat\\ChatServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

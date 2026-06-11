@@ -1,0 +1,25 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::create(config('chat.table_names.conversations', 'chat_conversations'), function (Blueprint $table) {
+            $table->uuid('id')->primary();
+            $table->string('name')->nullable();
+            $table->string('type')->default('private'); // private | group
+            $table->json('meta')->nullable();
+            $table->timestamps();
+            $table->softDeletes();
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists(config('chat.table_names.conversations', 'chat_conversations'));
+    }
+};
