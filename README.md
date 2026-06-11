@@ -26,8 +26,8 @@ A plug-and-play Livewire chat system for Laravel 11+.
 ## Requirements
 
 - PHP 8.2+
-- Laravel 11+
-- Livewire 3+
+- Laravel 11-13
+- Livewire 3-4
 
 ---
 
