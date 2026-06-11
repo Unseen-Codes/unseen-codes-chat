@@ -3,7 +3,13 @@
     "description": "A plug-and-play Livewire chat system for Laravel",
     "type": "library",
     "license": "MIT",
-    "keywords": ["laravel", "chat", "livewire", "real-time", "messaging"],
+    "keywords": [
+        "laravel",
+        "chat",
+        "livewire",
+        "real-time",
+        "messaging"
+    ],
     "authors": [
         {
             "name": "Unseen Codes",
@@ -12,7 +18,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "laravel/framework": "^11.0",
+        "illuminate/support": "^11|^12|^13",
         "livewire/livewire": "^3.0"
     },
     "require-dev": {
