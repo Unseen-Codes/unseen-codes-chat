@@ -1,0 +1,42 @@
+{
+    "name": "unseen-codes/chat",
+    "description": "Plug-and-play Livewire/Volt chat system for Laravel 11, 12, and 13",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "livewire", "volt", "chat", "real-time", "messaging"],
+    "authors": [
+        {
+            "name": "Unseen Codes",
+            "email": "hello@unseen-codes.dev"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0|^12.0|^13.0",
+        "livewire/livewire": "^3.0|^4.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "pestphp/pest": "^2.0|^3.0",
+        "pestphp/pest-plugin-laravel": "^2.0|^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "UnseenCodes\\Chat\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "UnseenCodes\\Chat\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "UnseenCodes\\Chat\\ChatServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
